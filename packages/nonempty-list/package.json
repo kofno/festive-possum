@@ -12,7 +12,7 @@
   },
   "scripts": {
     "docs": "typedoc src/index.ts --out docs --theme minimal && touch docs/.nojekyll",
-    "test": "ts-node node_modules/tape/bin/tape tests/**/*.ts | tap-spec",
+    "test": "tsc --noEmit",
     "build": "tsc",
     "tsc": "tsc",
     "yarn": "yarn"

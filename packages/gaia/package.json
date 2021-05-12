@@ -1,0 +1,47 @@
+{
+  "name": "@kofno/gaia",
+  "version": "0.0.0-development",
+  "description": "Safely read values from your environment",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kofno/gaia"
+  },
+  "scripts": {
+    "docs": "typedoc src/index.ts --out docs --theme minimal && nodetouch docs/.nojekyll",
+    "build": "tsc",
+    "test": "tsc --noEmit",
+    "tsc": "tsc",
+    "yarn": "yarn"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4",
+    "typedoc": "^0.20.36",
+    "ts-node": "^9.1.1",
+    "touch": "^3.1.0",
+    "maybeasy": "^2.5.0",
+    "taskarian": "^3.0.0",
+    "resulty": "^3.0.0"
+  },
+  "peerDependencies": {
+    "maybeasy": "^2.5.0",
+    "taskarian": "^2.0.2",
+    "resulty": "^2.2.0"
+  },
+  "keywords": [
+    "environment",
+    "fp",
+    "task"
+  ],
+  "author": "Ryan L. Bell <ryan.l.bell@gmail.com>",
+  "license": "MIT",
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "singleQuote": true
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
