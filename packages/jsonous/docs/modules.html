@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>maybeasy | maybeasy</title>
-	<meta name="description" content="Documentation for maybeasy">
+	<title>jsonous | jsonous</title>
+	<meta name="description" content="Documentation for jsonous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
   --color-background: #fdfdfd;
@@ -2674,7 +2674,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">maybeasy</a></strong>
+					<strong><a href="index.html">jsonous</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2705,193 +2705,160 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/just.html" class="tsd-kind-icon">Just</a>
+			<a href="classes/default.html" class="tsd-kind-icon">default</a>
 		</li>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/maybe.html" class="tsd-kind-icon">Maybe</a>
+		<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+			<a href="modules.html#decoderfn" class="tsd-kind-icon">Decoder<wbr>Fn</a>
 		</li>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/nothing.html" class="tsd-kind-icon">Nothing</a>
+		<li class=" tsd-kind-variable">
+			<a href="modules.html#boolean" class="tsd-kind-icon">boolean</a>
 		</li>
-		<li class=" tsd-kind-type-alias">
-			<a href="modules.html#emptyable" class="tsd-kind-icon">Emptyable</a>
+		<li class=" tsd-kind-variable">
+			<a href="modules.html#date" class="tsd-kind-icon">date</a>
 		</li>
-		<li class=" tsd-kind-type-alias">
-			<a href="modules.html#nullable" class="tsd-kind-icon">Nullable</a>
+		<li class=" tsd-kind-variable">
+			<a href="modules.html#dateiso" class="tsd-kind-icon">dateISO</a>
 		</li>
-		<li class=" tsd-kind-function tsd-has-type-parameter">
-			<a href="modules.html#fromempty" class="tsd-kind-icon">from<wbr>Empty</a>
+		<li class=" tsd-kind-variable">
+			<a href="modules.html#datejson" class="tsd-kind-icon">dateJSON</a>
 		</li>
-		<li class=" tsd-kind-function tsd-has-type-parameter">
-			<a href="modules.html#fromnullable" class="tsd-kind-icon">from<wbr>Nullable</a>
+		<li class=" tsd-kind-variable">
+			<a href="modules.html#number" class="tsd-kind-icon">number</a>
 		</li>
-		<li class=" tsd-kind-function">
-			<a href="modules.html#isjust" class="tsd-kind-icon">is<wbr>Just</a>
-		</li>
-		<li class=" tsd-kind-function">
-			<a href="modules.html#isnothing" class="tsd-kind-icon">is<wbr>Nothing</a>
+		<li class=" tsd-kind-variable">
+			<a href="modules.html#string" class="tsd-kind-icon">string</a>
 		</li>
 		<li class=" tsd-kind-function tsd-has-type-parameter">
-			<a href="modules.html#just" class="tsd-kind-icon">just</a>
+			<a href="modules.html#array" class="tsd-kind-icon">array</a>
 		</li>
 		<li class=" tsd-kind-function tsd-has-type-parameter">
-			<a href="modules.html#nothing" class="tsd-kind-icon">nothing</a>
+			<a href="modules.html#at" class="tsd-kind-icon">at</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#dict" class="tsd-kind-icon">dict</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#fail" class="tsd-kind-icon">fail</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#field" class="tsd-kind-icon">field</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#keyvaluepairs" class="tsd-kind-icon">key<wbr>Value<wbr>Pairs</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#maybe" class="tsd-kind-icon">maybe</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#nullable" class="tsd-kind-icon">nullable</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#oneof" class="tsd-kind-icon">one<wbr>Of</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="modules.html#succeed" class="tsd-kind-icon">succeed</a>
 		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<a href="#maybeasy" id="maybeasy" style="color: inherit; text-decoration: none;">
-				<h1>maybeasy</h1>
+			<a href="#jsonous" id="jsonous" style="color: inherit; text-decoration: none;">
+				<h1>jsonous</h1>
 			</a>
-			<p><a href="https://travis-ci.org/kofno/maybeasy"><img src="https://travis-ci.org/kofno/maybeasy.svg?branch=master" alt="Build Status"></a>
-			<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=plastic" alt="semantic-release"></a></p>
-			<p>Whether we like it or not, not every computation in a program is going to
-				return a value. Sometimes there&#39;s no value to return. Other times, something
-			goes wrong and we&#39;re just not sure what value to return.</p>
-			<p>In JavaScript we often will return null or undefined to represent the value
-				of Nothing, however we arrive at that value. This can often lead to failures
-				at runtime when we forget (or are unaware) that a value may be nothing.
-				Strict null checking makes this situation tolerable in Typescript, if only by
-			nagging you every place you need to check for Nothing.</p>
-			<p>Arrays are less prone to these types of failures, because if when there is
-				nothing, we return an empty array. We can safely apply functions to an array
-				without being concerned if there are values present, because an empty array and
-				a populated array have the same interface. Can that same principle be applied
-			to singular values?</p>
-			<p>Sure it can! The Maybe type offers a way to express that a value may be something,
-			or it may be nothing. Our intuition for mapping over arrays is applicable here.</p>
-			<a href="#the-functor-this-map" id="the-functor-this-map" style="color: inherit; text-decoration: none;">
-				<h2>the functor (this map)</h2>
-			</a>
-			<p>Given a computation that may or may not return a value, we can apply logic to
-				this value by mapping pure functions over the result of the computation. For
-			example:</p>
-			<pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">fetchSomething</span><span style="color: #000000"> = (): </span><span style="color: #267F99">Maybe</span><span style="color: #000000">&lt;</span><span style="color: #267F99">number</span><span style="color: #000000">&gt; </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> ...; </span><span style="color: #008000">// &lt;-- may or may not return something</span>
-
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">add2</span><span style="color: #000000"> = (</span><span style="color: #001080">n</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">n</span><span style="color: #000000"> + </span><span style="color: #098658">2</span><span style="color: #000000">;</span>
-
-<span style="color: #795E26">fetchSomething</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">add2</span><span style="color: #000000">); </span><span style="color: #008000">//</span>
-</code></pre>
-			<p>In this example, we add2 to the number that we fetched. But if the there is no
-				number -- it&#39;s Nothing -- the result of add2 is... Nothing. We won&#39;t get a
-			runtime error.</p>
-			<a href="#chaining-the-flat-map" id="chaining-the-flat-map" style="color: inherit; text-decoration: none;">
-				<h2>chaining (the flat map)</h2>
-			</a>
-			<p>Let&#39;s say that we have two computations. Both may return nothing, but one of the
-			computations depends on the other.</p>
-			<pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">fetchSomething</span><span style="color: #000000"> = (): </span><span style="color: #267F99">Maybe</span><span style="color: #000000">&lt;</span><span style="color: #267F99">number</span><span style="color: #000000">&gt; </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> ...;</span>
-
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">fetchSomethingElse</span><span style="color: #000000"> = (</span><span style="color: #001080">n</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">): </span><span style="color: #267F99">Maybe</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">&gt; </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> ...; </span><span style="color: #008000">// &lt;-- also may or may not return something</span>
-</code></pre>
-			<p>We <em>could</em> use a map here, as in this examples:</p>
-			<pre><code class="language-typescript"><span style="color: #795E26">fetchSomething</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">fetchSomethingElse</span><span style="color: #000000">);</span>
-</code></pre>
-			<p>The problem with this is that we will end up a maybe nested inside another maybe.
-				You intuition for Arrays applies here, too; if we map over an Array with a function
-				that returns an Array, we end up with an Array of Arrays. That same thinking
-			applies here; we&#39;ll end up with <code>Maybe&lt;Maybe&lt;string&gt;&gt;</code>.</p>
-			<p>To chain computations that both may return nothing, we need a different tool:
-				<code>andThen</code>. We can rewrite our previous example, but just replace <code>map</code> with
-			<code>andThen</code>:</p>
-			<pre><code class="language-typescript"><span style="color: #795E26">fetchSomething</span><span style="color: #000000">().</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">fetchSomethingElse</span><span style="color: #000000">);</span>
-</code></pre>
-			<p>If either computation is Nothing, the result is nothing. If both computations
-			succeed, then we have <code>Maybe&lt;string&gt;</code>.</p>
-			<a href="#building-an-object" id="building-an-object" style="color: inherit; text-decoration: none;">
-				<h2>building an object</h2>
-			</a>
-			<p>A common pattern in javascript is build an object from a set of computations.
-				When those computations may or may not return a value, it can be useful to
-			chain them together using Maybe.</p>
-			<p>Given our functions, you can chain them together using <code>andThen</code>. It looks like
-			this:</p>
-			<pre><code class="language-typescript"><span style="color: #795E26">fetchSomething</span><span style="color: #000000">().</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">a</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">fetchSomethingElse</span><span style="color: #000000">.</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">b</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #795E26">just</span><span style="color: #000000">({ </span><span style="color: #001080">a</span><span style="color: #000000">, </span><span style="color: #001080">b</span><span style="color: #000000"> })));</span>
-</code></pre>
-			<p>If the object is fairly complex, this nesting can be quite deep.</p>
-			<pre><code class="language-typescript"><span style="color: #795E26">fetchSomething</span><span style="color: #000000">()</span>
-<span style="color: #000000">.</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">a</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span>
-<span style="color: #000000">  </span><span style="color: #795E26">fetchSomethingElse</span><span style="color: #000000">().</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">b</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span>
-<span style="color: #000000">    </span><span style="color: #795E26">fetchC</span><span style="color: #000000">().</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">c</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span>
-<span style="color: #000000">      </span><span style="color: #795E26">fetchD</span><span style="color: #000000">().</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">d</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span>
-<span style="color: #000000">        </span><span style="color: #795E26">fetchE</span><span style="color: #000000">().</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">e</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span>
-<span style="color: #000000">          ({ </span><span style="color: #001080">a</span><span style="color: #000000">, </span><span style="color: #001080">b</span><span style="color: #000000">, </span><span style="color: #001080">c</span><span style="color: #000000">, </span><span style="color: #001080">d</span><span style="color: #000000">, </span><span style="color: #001080">e</span><span style="color: #000000"> })</span>
-<span style="color: #000000">        )</span>
-<span style="color: #000000">       )</span>
-<span style="color: #000000">      )</span>
-<span style="color: #000000">    );</span>
-</code></pre>
-			<p>This is barely distinguishable from callback hell. The <code>assign</code> method helps
-				flatten this out by allowing us to build an object incrementally. Here&#39;s the
-			last code example using <code>assign</code>:</p>
-			<pre><code class="language-typescript"><span style="color: #795E26">just</span><span style="color: #000000">({})</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">fetchSomething</span><span style="color: #000000">())</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">fetchSomethingElse</span><span style="color: #000000">())</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;c&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">fetchC</span><span style="color: #000000">())</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;d&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">fetchD</span><span style="color: #000000">())</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;e&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">fetchE</span><span style="color: #000000">());</span>
-</code></pre>
-			<p><code>assign</code> also accepts a function that returns a Maybe value as the second argument.
-				Use this when you need to calculate one value of the object, based on a previously
-			calculated value. For example:</p>
-			<pre><code class="language-typescript"><span style="color: #795E26">just</span><span style="color: #000000">({})</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">just</span><span style="color: #000000">(</span><span style="color: #098658">8</span><span style="color: #000000">))</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #000000">, </span><span style="color: #001080">scope</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #795E26">just</span><span style="color: #000000">(</span><span style="color: #001080">scope</span><span style="color: #000000">.</span><span style="color: #001080">a</span><span style="color: #000000"> + </span><span style="color: #098658">42</span><span style="color: #000000">)); </span><span style="color: #008000">// --&gt; Just { a: 8, b: 50 }</span>
-</code></pre>
-			<a href="#unwrapping-the-value" id="unwrapping-the-value" style="color: inherit; text-decoration: none;">
-				<h2>unwrapping the value</h2>
-			</a>
-			<p>At some point, we may need to send our result to another part of the system.
-				The other part of the system may not understand Maybe values. Or possibly this
-				value needs to be serialized as a string for sending to a third party. We need
-				a safe way to <em>unwrap</em> this value. For this purpose we have <code>getOrElse</code> and
-			<code>getOrElseValue</code>.</p>
-			<p><code>getOrElse</code> and <code>getOrElseValue</code> will return the value if it is present (a Just),
-				but also requires us to provide a default value, in the case that we have Nothing.
-				<code>getOrElseValue</code> is strict and takes a value of the generic type of the Maybe.
-				<code>getOrElse</code> is lazy. It takes a function that returns a type of the generic
-				type of the Maybe. The function will only be evaluated if the Maybe is Nothing.
-			Prefer usinf <code>getOrElse</code> if the default value is expensive to calculate.</p>
-			<p>This makes <em>unwrapping</em> the value safe.</p>
-			<a href="#putting-it-all-together" id="putting-it-all-together" style="color: inherit; text-decoration: none;">
-				<h2>putting it all together</h2>
-			</a>
-			<p>We can, of course, chain and map all we want to create a pipeline of data processors.
-				At the end we can unwrap our value for consumption by humans or other systems.
-			For example:</p>
-			<pre><code class="language-typescript"><span style="color: #795E26">fetchSomething</span><span style="color: #000000">()</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">add2</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">fetchSomethingElse</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">getOrElse</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;No data&#039;</span><span style="color: #000000">);</span>
-</code></pre>
+			<p><a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a></p>
+			<p>If you&#39;re building a web application, you&#39;re eventually going to need a reliable
+				way to convert JSON into type that you can use. <code>JSON.parse</code> will only get you
+			so far.</p>
+			<p>A better solution allows you to verify the structure of the source data while
+				converting it into the types you need to work with. It handles variations in
+				content structure. In a typed environment, it preserves your types so you don&#39;t
+				have to pass <code>any</code> types around. Errors are handled gracefully using a Result
+			type.</p>
+			<p>This library, heavily inspired by Elm&#39;s <a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Decode">JSON Decoder</a>, is just
+			such a solution.</p>
 			<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 				<h1>install</h1>
 			</a>
 			<blockquote>
-				<p>npm install --save maybeasy</p>
+				<p>npm install --save jsonous</p>
 			</blockquote>
 			<blockquote>
-				<p>yarn add maybeasy</p>
+				<p>yarn add jsonous</p>
 			</blockquote>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h1>usage</h1>
 			</a>
-			<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">just</span><span style="color: #000000">, </span><span style="color: #001080">nothing</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;maybeasy&#039;</span><span style="color: #000000">;</span>
+			<a href="#primitives" id="primitives" style="color: inherit; text-decoration: none;">
+				<h2>primitives</h2>
+			</a>
+			<p>There are several decoders for handling JSON primitives; strings, numbers,
+			booleans, and arrays (more on objects later)</p>
+			<pre><code class="language-typescript"><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;&quot;foo&quot;&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Ok(&quot;foo&quot;)</span>
+<span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;42&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Err(&quot;42 is not a string&quot;)</span>
 
-<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">parse</span><span style="color: #000000">(</span><span style="color: #001080">s</span><span style="color: #000000">) {</span>
-<span style="color: #000000">  </span><span style="color: #AF00DB">try</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #795E26">just</span><span style="color: #000000">(</span><span style="color: #267F99">JSON</span><span style="color: #000000">.</span><span style="color: #795E26">parse</span><span style="color: #000000">(</span><span style="color: #001080">s</span><span style="color: #000000">));</span>
-<span style="color: #000000">  } </span><span style="color: #AF00DB">catch</span><span style="color: #000000"> (</span><span style="color: #001080">e</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #795E26">nothing</span><span style="color: #000000">();</span>
-<span style="color: #000000">  }</span>
-<span style="color: #000000">}</span>
+<span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;42&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Ok(42)</span>
+<span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;&quot;foo&quot;&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Err(&quot;foo is not a number&quot;)</span>
+
+<span style="color: #001080">boolean</span><span style="color: #000000">.</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;true&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Ok(true)</span>
+<span style="color: #001080">boolean</span><span style="color: #000000">.</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;&quot;foo&quot;&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Err(&quot;foo is not a boolean&quot;)</span>
+</code></pre>
+			<a href="#arrays" id="arrays" style="color: inherit; text-decoration: none;">
+				<h2>arrays</h2>
+			</a>
+			<p>The array primitive applies another decoder to an array of values.</p>
+			<pre><code class="language-typescript"><span style="color: #795E26">array</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;[&quot;foo&quot;, &quot;bar&quot;]&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Ok([&quot;foo&quot;, &quot;bar&quot;])</span>
+<span style="color: #795E26">array</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;[&quot;foo&quot;, 42]&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; Err(&quot;42 is not a string&quot;)</span>
+</code></pre>
+			<a href="#objects" id="objects" style="color: inherit; text-decoration: none;">
+				<h2>objects</h2>
+			</a>
+			<p>The <code>field</code> and <code>at</code> decoders are used to extract values from objects.</p>
+			<pre><code class="language-typescript"><span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;bar&#039;</span><span style="color: #000000">, </span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">({ </span><span style="color: #001080">bar:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;baz&#039;</span><span style="color: #000000"> }); </span><span style="color: #008000">// --&gt; Ok(&#039;baz&#039;)</span>
+<span style="color: #795E26">at</span><span style="color: #000000">([</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">, </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;bar&#039;</span><span style="color: #000000">], </span><span style="color: #001080">number</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">({ </span><span style="color: #001080">foo:</span><span style="color: #000000"> [{ </span><span style="color: #001080">bar:</span><span style="color: #000000"> </span><span style="color: #098658">42</span><span style="color: #000000"> }] }); </span><span style="color: #008000">// --&gt; Ok(42)</span>
+</code></pre>
+			<p>Object decoders can be chained together to build more complex data structures.</p>
+			<pre><code class="language-typescript"><span style="color: #008000">// prettier-ignore</span>
+<span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;userId&#039;</span><span style="color: #000000">, </span><span style="color: #001080">number</span><span style="color: #000000">).</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">id</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span>
+<span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;emailAddress&#039;</span><span style="color: #000000">, </span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">andThen</span><span style="color: #000000">(</span><span style="color: #001080">email</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span>
+<span style="color: #795E26">succeed</span><span style="color: #000000">({ </span><span style="color: #001080">id</span><span style="color: #000000">, </span><span style="color: #001080">email</span><span style="color: #000000"> })))</span>
+<span style="color: #000000">.</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">({ </span><span style="color: #001080">userId:</span><span style="color: #000000"> </span><span style="color: #098658">213</span><span style="color: #000000">, </span><span style="color: #001080">emailAddress:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;foo@example.com&#039;</span><span style="color: #000000"> })</span>
+<span style="color: #008000">// --&gt; Ok({ id: 213, email: &#039;foo@example.com&#039;})</span>
+</code></pre>
+			<p>Of course, your code editor may try to reformat this code.</p>
+			<pre><code class="language-typescript"><span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;userId&#039;</span><span style="color: #000000">, </span><span style="color: #001080">number</span><span style="color: #000000">)</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">andThen</span><span style="color: #000000">((</span><span style="color: #001080">id</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;emailAddress&#039;</span><span style="color: #000000">, </span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">andThen</span><span style="color: #000000">((</span><span style="color: #001080">email</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #795E26">succeed</span><span style="color: #000000">({ </span><span style="color: #001080">id</span><span style="color: #000000">, </span><span style="color: #001080">email</span><span style="color: #000000"> }))</span>
+<span style="color: #000000">  )</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">({ </span><span style="color: #001080">userId:</span><span style="color: #000000"> </span><span style="color: #098658">213</span><span style="color: #000000">, </span><span style="color: #001080">emailAddress:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;foo@example.com&#039;</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// --&gt; Ok({ id: 213, email: &#039;foo@example.com&#039;})</span>
+</code></pre>
+			<p>For an object of any moderate complexity, this nesting is indistinguishable from
+			callback hell.</p>
+			<p>To combat this, decoders have a method named <code>assign</code>. It enacapsulates this
+				pattern of building objects such that objects can be built incrementally, without
+			nesting and without losing type safety.</p>
+			<p>The previous example would look like this using <code>assign</code>:</p>
+			<pre><code class="language-typescript"><span style="color: #795E26">succeed</span><span style="color: #000000">({})</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;id&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;userId&#039;</span><span style="color: #000000">, </span><span style="color: #001080">number</span><span style="color: #000000">))</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;email&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;emailAddress&#039;</span><span style="color: #000000">, </span><span style="color: #001080">string</span><span style="color: #000000">))</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">({ </span><span style="color: #001080">userId:</span><span style="color: #000000"> </span><span style="color: #098658">213</span><span style="color: #000000">, </span><span style="color: #001080">emailAddress:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;foo@example.com&#039;</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// --&gt; Ok({ id: 213, email: &#039;foo@example.com&#039; })</span>
+</code></pre>
+			<p>The best strategy for handling object construction with decoders
+			is to compose complex decoders from smaller, simpler decoders.</p>
+			<pre><code class="language-typescript"><span style="color: #795E26">succeed</span><span style="color: #000000">({})</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;user&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">field</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;user&#039;</span><span style="color: #000000">, </span><span style="color: #001080">userDecoder</span><span style="color: #000000">))</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;courses&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">at</span><span style="color: #000000">([</span><span style="color: #A31515">&#039;student&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;courses&#039;</span><span style="color: #000000">], </span><span style="color: #795E26">array</span><span style="color: #000000">(</span><span style="color: #001080">courseDecoder</span><span style="color: #000000">)))</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">decodeJson</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;... some json ... &#039;</span><span style="color: #000000">)</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">userDecoder</span><span style="color: #000000"> = </span><span style="color: #008000">//...</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">courseDecoder</span><span style="color: #000000"> = </span><span style="color: #008000">//...</span>
 </code></pre>
 			<a href="#docs" id="docs" style="color: inherit; text-decoration: none;">
 				<h1>docs</h1>
 			</a>
-			<p><a href="https://kofno.github.io/maybeasy">API</a></p>
+			<p><a href="https://kofno.github.io/jsonous">API</a></p>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -2900,27 +2867,39 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Classes</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/just.html" class="tsd-kind-icon">Just</a></li>
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/maybe.html" class="tsd-kind-icon">Maybe</a></li>
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/nothing.html" class="tsd-kind-icon">Nothing</a></li>
+							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/default.html" class="tsd-kind-icon">default</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Type aliases</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-type-alias"><a href="modules.html#emptyable" class="tsd-kind-icon">Emptyable</a></li>
-							<li class="tsd-kind-type-alias"><a href="modules.html#nullable" class="tsd-kind-icon">Nullable</a></li>
+							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#decoderfn" class="tsd-kind-icon">Decoder<wbr>Fn</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Variables</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-variable"><a href="modules.html#boolean" class="tsd-kind-icon">boolean</a></li>
+							<li class="tsd-kind-variable"><a href="modules.html#date" class="tsd-kind-icon">date</a></li>
+							<li class="tsd-kind-variable"><a href="modules.html#dateiso" class="tsd-kind-icon">dateISO</a></li>
+							<li class="tsd-kind-variable"><a href="modules.html#datejson" class="tsd-kind-icon">dateJSON</a></li>
+							<li class="tsd-kind-variable"><a href="modules.html#number" class="tsd-kind-icon">number</a></li>
+							<li class="tsd-kind-variable"><a href="modules.html#string" class="tsd-kind-icon">string</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#fromempty" class="tsd-kind-icon">from<wbr>Empty</a></li>
-							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#fromnullable" class="tsd-kind-icon">from<wbr>Nullable</a></li>
-							<li class="tsd-kind-function"><a href="modules.html#isjust" class="tsd-kind-icon">is<wbr>Just</a></li>
-							<li class="tsd-kind-function"><a href="modules.html#isnothing" class="tsd-kind-icon">is<wbr>Nothing</a></li>
-							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#just" class="tsd-kind-icon">just</a></li>
-							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#nothing" class="tsd-kind-icon">nothing</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#array" class="tsd-kind-icon">array</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#at" class="tsd-kind-icon">at</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#dict" class="tsd-kind-icon">dict</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#fail" class="tsd-kind-icon">fail</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#field" class="tsd-kind-icon">field</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#keyvaluepairs" class="tsd-kind-icon">key<wbr>Value<wbr>Pairs</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#maybe" class="tsd-kind-icon">maybe</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#nullable" class="tsd-kind-icon">nullable</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#oneof" class="tsd-kind-icon">one<wbr>Of</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#succeed" class="tsd-kind-icon">succeed</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2928,187 +2907,513 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Type aliases</h2>
-			<section class="tsd-panel tsd-member tsd-kind-type-alias">
-				<a name="emptyable" class="tsd-anchor"></a>
-				<h3>Emptyable</h3>
-				<div class="tsd-signature tsd-kind-icon">Emptyable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+				<a name="decoderfn" class="tsd-anchor"></a>
+				<h3>Decoder<wbr>Fn</h3>
+				<div class="tsd-signature tsd-kind-icon">Decoder<wbr>Fn&lt;A&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>thing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/index.ts#L6">index.ts:6</a></li>
+						<li>Defined in Decoder.ts:9</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A decoder function takes an object of any type and returns a Result</p>
+					</div>
+				</div>
+				<h4 class="tsd-type-parameters-title">Type parameters</h4>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>A</h4>
+					</li>
+				</ul>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">
-						<li class="tsd-parameter">
-							<h5>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+						<li class="tsd-parameter-signature">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>thing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>thing: <span class="tsd-signature-type">any</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-type-alias">
-				<a name="nullable" class="tsd-anchor"></a>
-				<h3>Nullable</h3>
-				<div class="tsd-signature tsd-kind-icon">Nullable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Variables</h2>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="boolean" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> boolean</h3>
+				<div class="tsd-signature tsd-kind-icon">boolean<span class="tsd-signature-symbol">:</span> <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/index.ts#L5">index.ts:5</a></li>
+						<li>Defined in Decoder.ts:184</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Boolean decoder</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="date" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> date</h3>
+				<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in Decoder.ts:204</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Date decoder.</p>
+					</div>
+					<p>Date decoder expects a value that is a number or a string. It will then try
+					to construct a JavaScript date object from the value.</p>
+					<p>This decoder use the Date constructor, and so assumes the same cross browser
+					inconsistencies.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="dateiso" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> dateISO</h3>
+				<div class="tsd-signature tsd-kind-icon">dateISO<span class="tsd-signature-symbol">:</span> <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in Decoder.ts:224</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Date ISO decoder</p>
+					</div>
+					<p>The Date ISO decoder expects a value that is a string formatted in some
+						variation of ISO 8601. It will fail if the date is invalid or is not a
+					recognized ISO 8601 format.</p>
+					<p>Relies on parseISO from date-fns
+					<a href="https://date-fns.org/v2.16.1/docs/parseISO">https://date-fns.org/v2.16.1/docs/parseISO</a></p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="datejson" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> dateJSON</h3>
+				<div class="tsd-signature tsd-kind-icon">dateJSON<span class="tsd-signature-symbol">:</span> <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in Decoder.ts:244</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Date JSON decoder</p>
+					</div>
+					<p>This decoder parses date formats common in JSON APIs</p>
+					<p>See parseJSON from date-fns for more information on supported formats
+					<a href="https://date-fns.org/v2.16.1/docs/parseJSON">https://date-fns.org/v2.16.1/docs/parseJSON</a></p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="number" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> number</h3>
+				<div class="tsd-signature tsd-kind-icon">number<span class="tsd-signature-symbol">:</span> <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in Decoder.ts:169</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Number decoder</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="string" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> string</h3>
+				<div class="tsd-signature tsd-kind-icon">string<span class="tsd-signature-symbol">:</span> <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in Decoder.ts:155</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>String decoder</p>
+					</div>
+				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
-				<a name="fromempty" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> from<wbr>Empty</h3>
+				<a name="array" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> array</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">from<wbr>Empty&lt;T&gt;<span class="tsd-signature-symbol">(</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">array&lt;A&gt;<span class="tsd-signature-symbol">(</span>decoder<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/index.ts#L26">index.ts:26</a></li>
+								<li>Defined in Decoder.ts:258</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Converts a value that <em>may</em> be empty, such as a string or an array, to a
-									maybe. It will accept anything that responds to length.
-									If the value is has a length of 0, then Nothing is returned.
-								If the value is anything else, it is returned wrapped in a Just.</p>
+								<p>Applies the <code>decoder</code> to all of the elements of an array.</p>
 							</div>
 						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
-								<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#emptyable" class="tsd-signature-type" data-tsd-kind="Type alias">Emptyable</a></h4>
+								<h4>A</h4>
 							</li>
 						</ul>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>xs: <span class="tsd-signature-type">T</span></h5>
+								<h5>decoder: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
-				<a name="fromnullable" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> from<wbr>Nullable</h3>
+				<a name="at" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> at</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">from<wbr>Nullable&lt;T&gt;<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#nullable" class="tsd-signature-type" data-tsd-kind="Type alias">Nullable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">at&lt;A&gt;<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span>, decoder<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/index.ts#L13">index.ts:13</a></li>
+								<li>Defined in Decoder.ts:308</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Converts a value that <em>may</em> be null or undefined to a maybe.
-									If the value is null or undefined, then Nothing is returned.
-								If the value is anything else, it is returned wrapped in a Just.</p>
+								<p>Decodes the value at a particular path in a nested JavaScript object.</p>
 							</div>
 						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
-								<h4>T</h4>
+								<h4>A</h4>
 							</li>
 						</ul>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>v: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#nullable" class="tsd-signature-type" data-tsd-kind="Type alias">Nullable</a></h5>
+								<h5>path: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="isjust" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Just</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">is<wbr>Just<span class="tsd-signature-symbol">(</span>maybe<span class="tsd-signature-symbol">: </span><a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/index.ts#L37">index.ts:37</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns true if maybe is an instance of Just</p>
-							</div>
-							<p>Example: Remove <code>Nothing</code> values from an array</p>
-							<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">maybes</span><span style="color: #000000">: </span><span style="color: #267F99">Maybe</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">&gt;[]</span>
-<span style="color: #001080">maybes</span><span style="color: #000000">.</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">isJust</span><span style="color: #000000">)</span>
-</code></pre>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
 							<li>
-								<h5>maybe: <a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>decoder: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="isnothing" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Nothing</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">is<wbr>Nothing<span class="tsd-signature-symbol">(</span>maybe<span class="tsd-signature-symbol">: </span><a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/index.ts#L47">index.ts:47</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns true if maybe is an instance of Nothing</p>
-							</div>
-							<p>Example: Count the <code>Nothing</code>s</p>
-							<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">maybes</span><span style="color: #000000">: </span><span style="color: #267F99">Maybe</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">&gt;[];</span>
-<span style="color: #001080">maybes</span><span style="color: #000000">.</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">isNothing</span><span style="color: #000000">).</span><span style="color: #001080">length</span><span style="color: #000000">;</span>
-</code></pre>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>maybe: <a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
-				<a name="just" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> just</h3>
+				<a name="dict" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> dict</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">just&lt;A&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">dict&lt;A&gt;<span class="tsd-signature-symbol">(</span>decoder<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/Just.ts#L54">Just.ts:54</a></li>
+								<li>Defined in Decoder.ts:427</li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Converts a JSON object to a Map&lt;string, A&gt;.</p>
+							</div>
+							<p>I would reccomend using this as a decoder of last resort. For correctness, you are
+								probably better off using field decoders and explicitly declaring the shape of the
+							objects you are expecting.</p>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>A</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>decoder: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The internal decoder to be applied to the object values</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="fail" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> fail</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">fail&lt;A&gt;<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in Decoder.ts:148</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a decoder that always fails, returning an Err with the message
+								passed in.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>A</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>message: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="field" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> field</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">field&lt;A&gt;<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, decoder<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in Decoder.ts:285</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Decodes the value at a particular field in a JavaScript object.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>A</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>name: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>decoder: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="keyvaluepairs" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> key<wbr>Value<wbr>Pairs</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">key<wbr>Value<wbr>Pairs&lt;A&gt;<span class="tsd-signature-symbol">(</span>decoder<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in Decoder.ts:398</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Converts a JSON object to an array of key value pairs ((string, A)[]). The
+									passed in decoder is applied to the object value. The key will always be
+								converted to a string.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>A</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>decoder: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The internal decoder to be applied to the object values</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="maybe" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> maybe</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">maybe&lt;A&gt;<span class="tsd-signature-symbol">(</span>decoder<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in Decoder.ts:338</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Makes any decoder optional. Be aware that this can mask a failing
+								decoder because it makes any failed decoder result a nothing.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>A</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>decoder: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="nullable" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> nullable</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">nullable&lt;A&gt;<span class="tsd-signature-symbol">(</span>decoder<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in Decoder.ts:364</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Decodes possibly null or undefined values into types.
+									There is overlap between <code>nullable</code> and <code>maybe</code> decoders.
+									The difference is that <code>maybe</code> will always succeed, even if
+								there is an error in the decoder.</p>
+							</div>
+							<p>Maybe example:</p>
+							<pre><code><span style="color: #795E26">maybe</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; Ok(&#039;foo&#039;)</span>
+<span style="color: #795E26">maybe</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">)  </span><span style="color: #008000">// =&gt; Ok(Nothing)</span>
+<span style="color: #795E26">maybe</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">(</span><span style="color: #098658">42</span><span style="color: #000000">)    </span><span style="color: #008000">// =&gt; Ok(Nothing)</span>
+</code></pre>
+							<p>Nullable example:</p>
+							<pre><code><span style="color: #795E26">nullable</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; Ok(&#039;foo&#039;)</span>
+<span style="color: #795E26">nullable</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">)  </span><span style="color: #008000">// =&gt; Ok(Nothing)</span>
+<span style="color: #795E26">nullable</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">).</span><span style="color: #795E26">decodeAny</span><span style="color: #000000">(</span><span style="color: #098658">42</span><span style="color: #000000">)    </span><span style="color: #008000">// =&gt; Err...</span>
+</code></pre>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>A</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>decoder: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="oneof" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> one<wbr>Of</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">one<wbr>Of&lt;A&gt;<span class="tsd-signature-symbol">(</span>decoders<span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in Decoder.ts:376</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Applies a series of decoders, in order, until one succeeds or they all
+								fail.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>A</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>decoders: <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="succeed" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> succeed</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">succeed&lt;A&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in Decoder.ts:142</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a decoder that always succeeds, resolving to the value passed in.</p>
+							</div>
+						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
@@ -3121,30 +3426,7 @@ img {
 								<h5>value: <span class="tsd-signature-type">A</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
-				<a name="nothing" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> nothing</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">nothing&lt;A&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/kofno/festive-possum/blob/f691461/packages/maybeasy/src/Nothing.ts#L46">Nothing.ts:46</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>A</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="classes/maybe.html" class="tsd-signature-type" data-tsd-kind="Class">Maybe</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="classes/default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
