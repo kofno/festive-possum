@@ -1,0 +1,15 @@
+language: node_js
+dist: xenial
+services:
+  - xvfb
+notifications:
+  email: false
+node_js:
+  - 14
+script:
+  - xvfb-run -a npm run build
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
