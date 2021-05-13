@@ -1,6 +1,6 @@
 {
   "name": "ajaxios",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Http requests with better error handling",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,7 +18,7 @@
     "@types/tape": "^4.2.29",
     "axios": "^0.19.0",
     "jasmine": "^2.6.0",
-    "jsonous": "^6.0.0",
+    "jsonous": "^6.1.0",
     "karma": "^4.4",
     "karma-chrome-launcher": "^3.0",
     "karma-firefox-launcher": "^1.0",
