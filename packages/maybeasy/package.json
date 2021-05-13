@@ -1,6 +1,6 @@
 {
   "name": "maybeasy",
-  "version": "2.6.0",
+  "version": "3.0.0",
   "description": "Maybe implemented in TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

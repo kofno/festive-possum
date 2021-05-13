@@ -1,6 +1,6 @@
 {
   "name": "@kofno/gaia",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Safely read values from your environment",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,18 +16,18 @@
     "yarn": "yarn"
   },
   "devDependencies": {
-    "typescript": "^4.2.4",
-    "typedoc": "^0.20.36",
-    "ts-node": "^9.1.1",
+    "maybeasy": "^3.0.0",
+    "resulty": "^4.0.0",
+    "taskarian": "^4.0.0",
     "touch": "^3.1.0",
-    "maybeasy": "^2.5.0",
-    "taskarian": "^3.0.0",
-    "resulty": "^3.0.0"
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.36",
+    "typescript": "^4.2.4"
   },
   "peerDependencies": {
     "maybeasy": "^2.5.0",
-    "taskarian": "^2.0.2",
-    "resulty": "^2.2.0"
+    "resulty": "^2.2.0",
+    "taskarian": "^2.0.2"
   },
   "keywords": [
     "environment",

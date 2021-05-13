@@ -1,6 +1,6 @@
 {
   "name": "nonempty-list",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "A list that always has at least one thing in it.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -26,8 +26,8 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "maybeasy": "^2.6.0",
-    "resulty": "^3.0.0"
+    "maybeasy": "^3.0.0",
+    "resulty": "^4.0.0"
   },
   "peerDependencies": {
     "maybeasy": "^2.6.0",
