@@ -24,11 +24,6 @@
     "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
   },
-  "peerDependencies": {
-    "maybeasy": "^2.5.0",
-    "resulty": "^2.2.0",
-    "taskarian": "^2.0.2"
-  },
   "keywords": [
     "environment",
     "fp",

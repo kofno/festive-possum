@@ -31,10 +31,6 @@
     "resulty": "^4.0.0",
     "weakset": "^1.0.0"
   },
-  "peerDependencies": {
-    "maybeasy": "^2.6.0",
-    "resulty": "^3.0.0"
-  },
   "prettier": {
     "trailingComma": "es5",
     "singleQuote": true,
