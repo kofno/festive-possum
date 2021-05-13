@@ -43,6 +43,11 @@ export class NonEmptyList<T> {
   public map = <S>(fn: (t: T) => S): NonEmptyList<S> =>
     new NonEmptyList(fn(this.first), this.rest.map(fn));
 
+  /**
+   * An alias for `map`
+   */
+  public and = this.map;
+
   public reduce = <S>(fn: (accum: S | undefined, t: T) => S | undefined, start?: S) =>
     this.toArray().reduce(fn, start);
 
@@ -75,5 +80,5 @@ export const fromArray = <T>(values: ReadonlyArray<T>): Result<string, NonEmptyL
 export const fromArrayMaybe = <T>(values: ReadonlyArray<T>): Maybe<NonEmptyList<T>> =>
   fromArray(values).cata({
     Err: () => nothing<NonEmptyList<T>>(),
-    Ok: l => just(l),
+    Ok: (l) => just(l),
   });

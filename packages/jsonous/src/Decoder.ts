@@ -25,6 +25,11 @@ export default class Decoder<A> {
   };
 
   /**
+   * An alias for `map`
+   */
+  public and = this.map;
+
+  /**
    * Chains decoders together. Can be used when the value from a decoder is
    * needed to decode the rest of the data. For example, if you have a versioned
    * api, you can check the version number and then select an appropriate decoder
@@ -145,8 +150,7 @@ export const succeed = <A>(value: A) => new Decoder((_) => ok(value));
  * Returns a decoder that always fails, returning an Err with the message
  * passed in.
  */
-export const fail = <A>(message: string): Decoder<A> =>
-  new Decoder((_) => err(message));
+export const fail = <A>(message: string): Decoder<A> => new Decoder((_) => err(message));
 
 /**
  * String decoder
@@ -168,9 +172,7 @@ export const string: Decoder<string> = new Decoder<string>((value) => {
 // tslint:disable-next-line:variable-name
 export const number: Decoder<number> = new Decoder<number>((value) => {
   if (typeof value !== 'number') {
-    const errorMsg = `I expected to find a number but instead I found ${stringify(
-      value
-    )}`;
+    const errorMsg = `I expected to find a number but instead I found ${stringify(value)}`;
     return err(errorMsg);
   }
 
@@ -183,9 +185,7 @@ export const number: Decoder<number> = new Decoder<number>((value) => {
 // tslint:disable-next-line:variable-name
 export const boolean: Decoder<boolean> = new Decoder<boolean>((value) => {
   if (typeof value !== 'boolean') {
-    const errorMsg = `I expected to find a boolean but instead found ${stringify(
-      value
-    )}`;
+    const errorMsg = `I expected to find a boolean but instead found ${stringify(value)}`;
     return err(errorMsg);
   }
 
@@ -202,8 +202,7 @@ export const boolean: Decoder<boolean> = new Decoder<boolean>((value) => {
  * inconsistencies.
  */
 export const date: Decoder<Date> = new Decoder<Date>((value) => {
-  const errMsg = (v: any): string =>
-    `I expected a date but instead I found ${stringify(v)}`;
+  const errMsg = (v: any): string => `I expected a date but instead I found ${stringify(v)}`;
   return ok(value)
     .andThen((s) => string.map((v) => new Date(v)).decodeAny(s))
     .orElse((n) => number.map((v) => new Date(v)).decodeAny(n))
@@ -226,9 +225,7 @@ export const dateISO: Decoder<Date> = new Decoder<Date>((value) => {
     .andThen((v) => string.decodeAny(v))
     .map(parseISO)
     .andThen((d) =>
-      isValid(d)
-        ? ok(d)
-        : err(`I expected an ISO date but instead I found ${stringify(value)}`)
+      isValid(d) ? ok(d) : err(`I expected an ISO date but instead I found ${stringify(value)}`)
     );
 });
 
@@ -246,9 +243,7 @@ export const dateJSON: Decoder<Date> = new Decoder<Date>((value) => {
     .andThen((v) => string.decodeAny(v))
     .map(parseJSON)
     .andThen((d) =>
-      isValid(d)
-        ? ok(d)
-        : err(`I expected an JSON date but instead I found ${stringify(value)}`)
+      isValid(d) ? ok(d) : err(`I expected an JSON date but instead I found ${stringify(value)}`)
     );
 });
 
@@ -258,9 +253,7 @@ export const dateJSON: Decoder<Date> = new Decoder<Date>((value) => {
 export const array = <A>(decoder: Decoder<A>): Decoder<A[]> =>
   new Decoder<A[]>((value) => {
     if (!(value instanceof Array)) {
-      const errorMsg = `I expected an array but instead I found ${stringify(
-        value
-      )}`;
+      const errorMsg = `I expected an array but instead I found ${stringify(value)}`;
       return err(errorMsg);
     }
 
@@ -297,23 +290,16 @@ export const field = <A>(name: string, decoder: Decoder<A>): Decoder<A> =>
     }
 
     const v = value[name];
-    return decoder
-      .decodeAny(v)
-      .mapError((e) => `${e}:\noccurred in a field named '${name}'`);
+    return decoder.decodeAny(v).mapError((e) => `${e}:\noccurred in a field named '${name}'`);
   });
 
 /**
  * Decodes the value at a particular path in a nested JavaScript object.
  */
-export const at = <A>(
-  path: Array<number | string>,
-  decoder: Decoder<A>
-): Decoder<A> =>
+export const at = <A>(path: Array<number | string>, decoder: Decoder<A>): Decoder<A> =>
   new Decoder<A>((value) => {
     if (value == null) {
-      return err(
-        `I found an error. Could not apply 'at' path to an undefined or null value.`
-      );
+      return err(`I found an error. Could not apply 'at' path to an undefined or null value.`);
     }
     let val = value;
     let idx = 0;
@@ -380,9 +366,7 @@ export const oneOf = <A>(decoders: Array<Decoder<A>>): Decoder<A> =>
     }
 
     const result = decoders.reduce((memo, decoder) => {
-      return memo.orElse((err1) =>
-        decoder.decodeAny(value).mapError((err2) => `${err1}\n${err2}`)
-      );
+      return memo.orElse((err1) => decoder.decodeAny(value).mapError((err2) => `${err1}\n${err2}`));
     }, err<string, A>(''));
 
     return result.mapError((m) => `I found the following problems:\n${m}`);

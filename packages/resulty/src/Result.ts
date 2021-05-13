@@ -25,6 +25,13 @@ abstract class Result<E, A> {
   public abstract map<B>(fn: (_: A) => B): Result<E, B>;
 
   /**
+   * An alias for `map`
+   */
+  public and<B>(fn: (_: A) => B): Result<E, B> {
+    return this.map(fn);
+  }
+
+  /**
    * Returns a new result after applying fn to the error value. successful
    * results are returned unchanged.
    */

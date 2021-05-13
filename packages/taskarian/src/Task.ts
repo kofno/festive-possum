@@ -201,6 +201,13 @@ class Task<E, T> {
   }
 
   /**
+   * An alias for `map`
+   */
+  public and<A>(f: (t: T) => A): Task<E, A> {
+    return this.map(f);
+  }
+
+  /**
    * Execute a Task in the context of a successful task. Flatten the result.
    */
   public andThen<A>(f: (t: T) => Task<E, A>): Task<E, A> {
