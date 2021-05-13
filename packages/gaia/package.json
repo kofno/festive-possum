@@ -1,6 +1,6 @@
 {
   "name": "@kofno/gaia",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "Safely read values from your environment",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
