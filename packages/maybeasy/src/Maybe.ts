@@ -24,6 +24,13 @@ abstract class Maybe<A> {
   public abstract map<B>(fn: (a: A) => B): Maybe<B>;
 
   /**
+   * An alias for `map`
+   */
+  public and<B>(fn: (a: A) => B): Maybe<B> {
+    return this.map(fn);
+  }
+
+  /**
    * Chain Maybe computations together. If any computation returns a Nothing,
    * then Nothing is the result of the computation.
    */
