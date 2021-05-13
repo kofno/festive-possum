@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kofno/gaia"
+    "url": "https://github.com/kofno/festive-possum"
   },
   "scripts": {
     "docs": "typedoc src/index.ts --out docs --theme minimal && nodetouch docs/.nojekyll",

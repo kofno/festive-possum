@@ -4,7 +4,10 @@
   "description": "Immutable Stacks and Deques and such",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "https://github.com/kofno/cute",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kofno/festive-possum"
+  },
   "author": "Ryan L. Bell <ryan.l.bell@gmail.com>",
   "license": "MIT",
   "private": false,
