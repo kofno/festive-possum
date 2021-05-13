@@ -6,8 +6,8 @@ export function identity<A>(a: A): A {
   return a;
 }
 
-export function always<A>(a: A): () => A {
-  return () => a;
+export function always<A>(a: A): (x?: any) => A {
+  return (_) => a;
 }
 
 export function pipe<T>(): UnaryFunction<T, T>;
