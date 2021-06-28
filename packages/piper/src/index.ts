@@ -10,6 +10,10 @@ export function always<A>(a: A): (x?: any) => A {
   return (_) => a;
 }
 
+export function assertNever(x: never): never {
+  throw new Error(`Unexpected value: ${x}`);
+}
+
 export function pipe<T>(): UnaryFunction<T, T>;
 export function pipe<T, A>(fn1: UnaryFunction<T, A>): UnaryFunction<T, A>;
 export function pipe<T, A, B>(
