@@ -16,4 +16,7 @@ const cyclicalReferenceReplacer = () => {
   };
 };
 
+/*
+ * Since this function is useful for building custom decoders, it is exposed to simplify error reporting.
+ */
 export const stringify = (value: any): string => JSON.stringify(value, cyclicalReferenceReplacer());

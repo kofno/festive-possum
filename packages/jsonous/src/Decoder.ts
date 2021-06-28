@@ -1,7 +1,7 @@
 import { isValid, parseISO, parseJSON } from 'date-fns';
 import { just, Maybe, nothing } from 'maybeasy';
 import { err, Err, ok, Result } from 'resulty';
-import { stringify } from './Internal/ErrorStringify';
+import { stringify } from './ErrorStringify';
 
 /**
  * A decoder function takes an object of any type and returns a Result

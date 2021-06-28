@@ -163,10 +163,10 @@ marked@^2.0.3:
   resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.3.tgz#3551c4958c4da36897bda2a16812ef1399c8d6b0"
   integrity sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==
 
-maybeasy@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-2.5.0.tgz#633ed6abf4ece0b276981357c039376d633a8d83"
-  integrity sha512-H9AJnBR/Qzh7/oTFjQAx62gw1p0CI88R3uF5zQrktLZ9VvSVXZsTk4GCntcKwKFjMGpv8VLfodWJCsLNYAUFUg==
+maybeasy@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-3.0.0.tgz#732c244da190c742de99aa682e6f86a66152bbcc"
+  integrity sha512-hMjmt0Kmfp2PdG9knKi6eUdp4513hkDib99EKqMK5tu1mn+t4Hih/pbJ4g5Kf3+f+c6GV6tBinZqtTtcnubm/g==
 
 minimatch@^3.0.0, minimatch@^3.0.4:
   version "3.0.4"
@@ -235,10 +235,10 @@ resolve@^1.1.6:
   dependencies:
     path-parse "^1.0.6"
 
-resulty@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/resulty/-/resulty-2.2.0.tgz#5be6b975ba36faa4cb4753bd62ffa620b1c6edce"
-  integrity sha512-hb2qC0Ad2+fcFkO4VCbhGzuj/pRs1zRpUbjxT+jinbmAhV4AiM4mJzzmbUPh3pc7GxffHggWp3IeJiXpqOPDvA==
+resulty@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/resulty/-/resulty-4.0.0.tgz#fbd6470fde712a88b7c983394c7486da290ea6e2"
+  integrity sha512-toajg6lqdp9tmV0ohsTxWiwoaWJd2WiuH7vOx+BJtj1Bs9+XoGa+0Zu8yRNV02gS5DphnrdnRG4Xjr7vl+eP8g==
 
 shelljs@^0.8.4:
   version "0.8.4"
@@ -270,10 +270,12 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-taskarian@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-2.0.2.tgz#a1d77475b067d67b22250ca6614cb9d55e65d783"
-  integrity sha512-iNaLdp4cTiCViC7UuadPrqROgNw6BdlSrbuZTe6DYVJV0CROuQ+nmQBtZkp+OocpYr9s47I1EirxsbdVfpJodA==
+taskarian@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-4.0.0.tgz#c82484b7b135629f07c18c689f99142c466894dd"
+  integrity sha512-C0cDkBYMpG6jXDUhdTxYL0ckXhRUVZddukexD+rrXamYIZy8k3DJ0vmNa49CrXiyLrcIDMoz1yJd6jFd2Lifcg==
+  dependencies:
+    resulty "^4.0.0"
 
 touch@^3.1.0:
   version "3.1.0"
