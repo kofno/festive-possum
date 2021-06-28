@@ -1,6 +1,6 @@
 {
   "name": "@kofno/stack-ts",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Typescript based immutable stack",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
