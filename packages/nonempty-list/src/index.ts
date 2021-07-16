@@ -48,8 +48,11 @@ export class NonEmptyList<T> {
    */
   public and = this.map;
 
-  public reduce = <S>(fn: (accum: S | undefined, t: T) => S | undefined, start?: S) =>
-    this.toArray().reduce(fn, start);
+  public reduce<S>(fn: (accum: S, t: T) => S, start: S): S;
+  public reduce(fn: (accum: T, t: T) => T): T;
+  public reduce<S>(fn: (accum: S | undefined, t: T) => S, start?: S) {
+    return this.toArray().reduce(fn, start);
+  }
 
   public filter = (fn: (t: T) => boolean): T[] => this.toArray().filter(fn);
 
