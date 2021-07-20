@@ -116,3 +116,12 @@ test('find', (t) => {
 
   t.end();
 });
+
+test('[Symbol.iterator]', (t) => {
+  const numbers = new NonEmptyList(1, [2, 3, 4]);
+  const ary = Array.from(numbers);
+
+  t.deepEqual(ary, [1, 2, 3, 4]);
+
+  t.end();
+});

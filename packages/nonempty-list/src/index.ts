@@ -2,7 +2,7 @@ import { just, Maybe, nothing } from 'maybeasy';
 import { err, ok, Result } from 'resulty';
 import { find } from './Helpers';
 
-export class NonEmptyList<T> {
+export class NonEmptyList<T> implements Iterable<T> {
   readonly first: T;
   readonly rest: ReadonlyArray<T>;
 
@@ -65,6 +65,13 @@ export class NonEmptyList<T> {
 
   public get length(): number {
     return this.rest.length + 1;
+  }
+
+  public *[Symbol.iterator]() {
+    yield this.first;
+    for (let value of this.rest) {
+      yield value;
+    }
   }
 }
 

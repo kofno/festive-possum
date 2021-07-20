@@ -12,7 +12,7 @@
   },
   "scripts": {
     "docs": "typedoc src/index.ts --out docs --theme minimal && touch docs/.nojekyll",
-    "test": "tsc --noEmit",
+    "test": "ts-node node_modules/tape/bin/tape tests/**/*.ts | tap-spec",
     "build": "tsc",
     "tsc": "tsc",
     "yarn": "yarn"
@@ -21,7 +21,7 @@
     "@types/tape": "^4.2.32",
     "tap-spec": "^5.0.0",
     "tape": "^4.9.1",
-    "ts-node": "^9.1.1",
+    "ts-node": "^10.1.0",
     "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
   },
