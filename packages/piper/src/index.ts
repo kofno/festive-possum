@@ -93,3 +93,12 @@ export class Pipeline<A, B> {
 export function pipeline<A, B>(fn: UnaryFunction<A, B>): Pipeline<A, B> {
   return new Pipeline(fn);
 }
+
+export function pick<Key extends keyof Type, Type>(key: Key, obj: Type): Type[Key];
+export function pick<Key extends string, Value>(key: Key): (obj: Record<Key, Value>) => Value;
+export function pick<Key extends string>(key: Key): <Value>(obj: Record<Key, Value>) => Value;
+export function pick<T>(key: keyof T, obj?: T) {
+  const doit = (obj: T) => obj[key];
+
+  return typeof obj === 'undefined' ? doit : doit(obj);
+}
