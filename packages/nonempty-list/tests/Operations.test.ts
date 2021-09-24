@@ -125,3 +125,25 @@ test('[Symbol.iterator]', (t) => {
 
   t.end();
 });
+
+test('join', (t) => {
+  const numbers = new NonEmptyList(1, [2, 3, 4]);
+
+  t.deepEqual(numbers.join(', '), '1, 2, 3, 4');
+
+  t.end();
+});
+
+test('andThen', (t) => {
+  const numbers = new NonEmptyList(1, [2, 3]);
+  const fn = (n: number): NonEmptyList<number> => {
+    return new NonEmptyList(n + 1, [n + 2, n + 3]);
+  };
+
+  const result = numbers.andThen(fn);
+
+  t.equal(2, result.first);
+  t.deepEqual(result.rest, [3, 4, 3, 4, 5, 4, 5, 6]);
+
+  t.end();
+});
