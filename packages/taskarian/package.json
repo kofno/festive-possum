@@ -1,6 +1,6 @@
 {
   "name": "taskarian",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "A future implementation in TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,7 +18,7 @@
     "yarn": "yarn"
   },
   "dependencies": {
-    "resulty": "^4.0.0"
+    "resulty": "^5.0.0"
   },
   "devDependencies": {
     "@types/tape": "^4.2.29",

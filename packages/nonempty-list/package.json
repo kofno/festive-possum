@@ -1,6 +1,6 @@
 {
   "name": "nonempty-list",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A list that always has at least one thing in it.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "maybeasy": "^3.0.0",
-    "resulty": "^4.0.0"
+    "resulty": "^5.0.0"
   },
   "prettier": {
     "trailingComma": "es5",

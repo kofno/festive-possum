@@ -1,6 +1,6 @@
 {
   "name": "ajaxian",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Ajax requests with better error handling",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -29,8 +29,8 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "resulty": "^4.0.0",
-    "taskarian": "^4.1.0"
+    "resulty": "^5.0.0",
+    "taskarian": "^4.2.0"
   },
   "repository": {
     "type": "git",
