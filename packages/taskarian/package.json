@@ -1,6 +1,6 @@
 {
   "name": "taskarian",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "A future implementation in TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,7 +18,7 @@
     "yarn": "yarn"
   },
   "dependencies": {
-    "@kofno/piper": "^4.1.0",
+    "@kofno/piper": "^4.2.0",
     "maybeasy": "^3.0.0"
   },
   "devDependencies": {
