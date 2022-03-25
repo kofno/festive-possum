@@ -739,9 +739,9 @@ custom-event@~1.0.0:
   integrity sha1-XQKkaFCt8bSjF5RqOSj8y1v9BCU=
 
 date-fns@^2.16.1:
-  version "2.22.1"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.22.1.tgz#1e5af959831ebb1d82992bf67b765052d8f0efc4"
-  integrity sha512-yUFPQjrxEmIsMqlHhAhmxkuH769baF21Kk+nZwZGyrMoyLA+LugaQtC0+Tqf9CBUUULWwUJt6Q5ySI3LJDDCGg==
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 date-format@^2.0.0, date-format@^2.1.0:
   version "2.1.0"
@@ -1556,14 +1556,14 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonous@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/jsonous/-/jsonous-6.1.0.tgz#ced81b0ca07d90e27be85e529ba581fa2f5bd417"
-  integrity sha512-AOR1ciUWGVy8TVBqBa15yhREJfvz6TotJf261RADRzGk8XtigvZpRmfHXqcG2BcDj99HOQgOl48JNypNuqgHaA==
+jsonous@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/jsonous/-/jsonous-7.1.0.tgz#2bae7e9cacd9f89e35e3e80bd573c57a5b1a6803"
+  integrity sha512-Wu82ADyHAVpyDzPDHa/ihrNE1M+e36iPaQm195QPiAjxrjNOpQ5FHaqSC9gXiZeUiAHFp69sfV0BpSmzWPGyfA==
   dependencies:
     date-fns "^2.16.1"
     maybeasy "^3.0.0"
-    resulty "^4.0.0"
+    resulty "^5.0.0"
     weakset "^1.0.0"
 
 karma-chrome-launcher@^3.0:
@@ -2183,10 +2183,10 @@ resolve@~1.17.0:
   dependencies:
     path-parse "^1.0.6"
 
-resulty@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/resulty/-/resulty-4.0.0.tgz#fbd6470fde712a88b7c983394c7486da290ea6e2"
-  integrity sha512-toajg6lqdp9tmV0ohsTxWiwoaWJd2WiuH7vOx+BJtj1Bs9+XoGa+0Zu8yRNV02gS5DphnrdnRG4Xjr7vl+eP8g==
+resulty@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/resulty/-/resulty-5.0.0.tgz#962fec061caaade8d600d39d88db370c4f4a9a9a"
+  integrity sha512-K4E8JWqVqjCimjfdM/QyQWLs8xwdhJGVsVy2T6hvU9ihTEaEL72/eI/8wtVP7ddM+DKD2dNnNxLwthoX0RZrow==
 
 resumer@~0.0.0:
   version "0.0.0"
@@ -2510,12 +2510,12 @@ tape@^4.6.3:
     string.prototype.trim "~1.2.1"
     through "~2.3.8"
 
-taskarian@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-4.0.0.tgz#c82484b7b135629f07c18c689f99142c466894dd"
-  integrity sha512-C0cDkBYMpG6jXDUhdTxYL0ckXhRUVZddukexD+rrXamYIZy8k3DJ0vmNa49CrXiyLrcIDMoz1yJd6jFd2Lifcg==
+taskarian@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-4.2.0.tgz#ecb3fd874e7ebb9bd073814d6680e88fb31e38e0"
+  integrity sha512-unOpUkjHC2iHG9ZDsxYkwDqKORDFAPHWWlGzASiDB7rXEzNdHDx+EU1PqMscjBkXjdFnYCVrD4m9/hDOBjFrEg==
   dependencies:
-    resulty "^4.0.0"
+    resulty "^5.0.0"
 
 through2@^2.0.0:
   version "2.0.5"

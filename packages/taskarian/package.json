@@ -18,7 +18,8 @@
     "yarn": "yarn"
   },
   "dependencies": {
-    "resulty": "^5.0.0"
+    "@kofno/piper": "^4.1.0",
+    "maybeasy": "^3.0.0"
   },
   "devDependencies": {
     "@types/tape": "^4.2.29",

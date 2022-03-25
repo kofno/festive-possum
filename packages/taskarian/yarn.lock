@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@kofno/piper@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@kofno/piper/-/piper-4.1.0.tgz#7c932f1f4ca18cd319f39c69210e7a935e04a2af"
+  integrity sha512-q4f4e4LlWaEOp5H2xqJikcmPUO9CWJ+PwnRQNlTgXwBOf7r4LyUlXEureGI9Tgz4eYF4RRYb00G1LACRIsF5bg==
+
 "@types/node@*":
   version "14.0.14"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
@@ -348,6 +353,11 @@ marked@^2.0.3:
   resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.3.tgz#3551c4958c4da36897bda2a16812ef1399c8d6b0"
   integrity sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==
 
+maybeasy@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-3.0.0.tgz#732c244da190c742de99aa682e6f86a66152bbcc"
+  integrity sha512-hMjmt0Kmfp2PdG9knKi6eUdp4513hkDib99EKqMK5tu1mn+t4Hih/pbJ4g5Kf3+f+c6GV6tBinZqtTtcnubm/g==
+
 minimatch@^3.0.0, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
@@ -500,11 +510,6 @@ resolve@^1.1.6, resolve@~1.17.0:
   integrity sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==
   dependencies:
     path-parse "^1.0.6"
-
-resulty@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/resulty/-/resulty-4.0.0.tgz#fbd6470fde712a88b7c983394c7486da290ea6e2"
-  integrity sha512-toajg6lqdp9tmV0ohsTxWiwoaWJd2WiuH7vOx+BJtj1Bs9+XoGa+0Zu8yRNV02gS5DphnrdnRG4Xjr7vl+eP8g==
 
 resumer@~0.0.0:
   version "0.0.0"
