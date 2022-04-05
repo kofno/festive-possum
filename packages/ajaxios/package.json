@@ -1,6 +1,6 @@
 {
   "name": "ajaxios",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Http requests with better error handling",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
