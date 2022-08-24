@@ -120,7 +120,7 @@ export default class Decoder<A> {
       const value = JSON.parse(json);
       return this.decodeAny(value);
     } catch (e) {
-      return err(e.message) as Result<string, A>;
+      return err(String(e)) as Result<string, A>;
     }
   };
 
