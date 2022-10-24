@@ -75,9 +75,7 @@ export class NonEmptyList<T> implements Iterable<T> {
   };
 
   public join = (separator?: string): string => {
-    const first =
-      typeof separator === 'undefined' ? String(this.first) : String(this.first) + separator;
-    return first + this.rest.join(separator);
+    return this.toArray().join(separator);
   };
 
   public toArray = (): T[] => [this.first, ...this.rest];

@@ -129,7 +129,13 @@ test('[Symbol.iterator]', (t) => {
 test('join', (t) => {
   const numbers = new NonEmptyList(1, [2, 3, 4]);
 
-  t.deepEqual(numbers.join(', '), '1, 2, 3, 4');
+  t.equals(numbers.join(', '), '1, 2, 3, 4');
+  t.equals(numbers.join(), '1,2,3,4');
+
+  const single = new NonEmptyList(1, []);
+
+  t.equals(single.join(', '), '1');
+  t.equals(single.join(), '1');
 
   t.end();
 });
