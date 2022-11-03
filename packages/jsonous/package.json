@@ -1,6 +1,6 @@
 {
   "name": "jsonous",
-  "version": "7.4.0",
+  "version": "7.5.0",
   "description": "Type safe JSON decoding for JavaScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "date-fns": "^2.16.1",
-    "maybeasy": "^3.0.0",
+    "maybeasy": "^4.0.0",
     "resulty": "^5.0.0",
     "weakset": "^1.0.0"
   },

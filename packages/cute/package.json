@@ -1,6 +1,6 @@
 {
   "name": "@kofno/cute",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Immutable Stacks and Deques and such",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -19,7 +19,7 @@
     "yarn": "yarn"
   },
   "devDependencies": {
-    "maybeasy": "^3.0.0",
+    "maybeasy": "^4.0.0",
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
