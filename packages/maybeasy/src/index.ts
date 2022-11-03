@@ -34,7 +34,7 @@ const fromEmpty = <T extends Emptyable>(xs: T): Maybe<T> =>
  *     const maybes: Maybe<string>[]
  *     maybes.filter(isJust)
  */
-const isJust = (maybe: Maybe<any>): boolean => maybe instanceof Just;
+const isJust = (maybe: Maybe<any>): boolean => maybe.isJust();
 
 /**
  * Returns true if maybe is an instance of Nothing
@@ -44,7 +44,7 @@ const isJust = (maybe: Maybe<any>): boolean => maybe instanceof Just;
  *     const maybes: Maybe<string>[];
  *     maybes.filter(isNothing).length;
  */
-const isNothing = (maybe: Maybe<any>): boolean => maybe instanceof Nothing;
+const isNothing = (maybe: Maybe<any>): boolean => maybe.isNothing();
 
 export {
   Maybe,

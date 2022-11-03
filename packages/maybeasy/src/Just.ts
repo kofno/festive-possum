@@ -49,6 +49,14 @@ export class Just<A> extends Maybe<A> {
   public elseDo(fn: () => void): Maybe<A> {
     return this;
   }
+
+  public isJust(): boolean {
+    return true;
+  }
+
+  public isNothing(): boolean {
+    return false;
+  }
 }
 
 export const just = <A>(value: A): Maybe<A> => new Just<A>(value);

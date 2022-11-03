@@ -41,6 +41,14 @@ export class Nothing<A> extends Maybe<A> {
     fn();
     return this;
   }
+
+  public isJust(): boolean {
+    return false;
+  }
+
+  public isNothing(): boolean {
+    return true;
+  }
 }
 
 export const nothing = <A>(): Maybe<A> => new Nothing<A>();
