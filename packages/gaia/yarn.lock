@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@kofno/piper@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@kofno/piper/-/piper-4.3.0.tgz#001a8f81ec606df3c5d84edf59bff67042b4ea26"
+  integrity sha512-H3hpwwuZGUtPxGkvVQ6tY4Sguvf+/urYJZTeJ373ABY3We+TE0ZtqwjOLe/oqg3RwEjjnBI0xkbgMcu1mBjaLw==
+
 "@types/node@^17.0.23":
   version "17.0.23"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.23.tgz#3b41a6e643589ac6442bdbd7a4a3ded62f33f7da"
@@ -168,10 +173,10 @@ marked@^2.0.3:
   resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.3.tgz#3551c4958c4da36897bda2a16812ef1399c8d6b0"
   integrity sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==
 
-maybeasy@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-3.0.0.tgz#732c244da190c742de99aa682e6f86a66152bbcc"
-  integrity sha512-hMjmt0Kmfp2PdG9knKi6eUdp4513hkDib99EKqMK5tu1mn+t4Hih/pbJ4g5Kf3+f+c6GV6tBinZqtTtcnubm/g==
+maybeasy@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-4.0.0.tgz#4046640918d6c1aa3320c3d26686bca802348b12"
+  integrity sha512-mbm82AKFF5ZXV+6Td8a75POzfzMBFMH4HBaqKGSJ23gls2DzT/EJUA+20WH3F3LI17CNZUgVCfOHjfQAS1ZXAA==
 
 minimatch@^3.0.0, minimatch@^3.0.4:
   version "3.0.4"
@@ -275,12 +280,13 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-taskarian@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-4.2.0.tgz#ecb3fd874e7ebb9bd073814d6680e88fb31e38e0"
-  integrity sha512-unOpUkjHC2iHG9ZDsxYkwDqKORDFAPHWWlGzASiDB7rXEzNdHDx+EU1PqMscjBkXjdFnYCVrD4m9/hDOBjFrEg==
+taskarian@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-5.2.0.tgz#d4f9cbf20b612d4c8a21e82fc802bb2266b77c97"
+  integrity sha512-+u7sjbYFD5D/SikscOf78WFbPkkg+z2BKrO+LS+sDkhLSnw8k/AoD0l5AIKShdeogiWFNtn/ivHeQ9n0sTzwGQ==
   dependencies:
-    resulty "^5.0.0"
+    "@kofno/piper" "^4.3.0"
+    maybeasy "^4.0.0"
 
 touch@^3.1.0:
   version "3.1.0"

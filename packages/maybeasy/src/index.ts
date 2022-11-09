@@ -46,6 +46,28 @@ const isJust = (maybe: Maybe<any>): boolean => maybe.isJust();
  */
 const isNothing = (maybe: Maybe<any>): boolean => maybe.isNothing();
 
+/**
+ * Returns the value of the maybe if it is a Just, otherwise returns the
+ * provided default value.
+ */
+function getOrElseValue<T>(value: T): (maybe: Maybe<T>) => T;
+function getOrElseValue<T>(value: T, maybe: Maybe<T>): T;
+function getOrElseValue<T>(value: T, maybe?: Maybe<T>) {
+  const doit = (maybe: Maybe<T>) => maybe.getOrElseValue(value);
+  return typeof maybe === 'undefined' ? doit : doit(maybe);
+}
+
+/**
+ * Returns the value of the maybe if it is a Just, otherwise returns the
+ * result of the provided function.
+ */
+function getOrElse<T>(fn: () => T, maybe: Maybe<T>): T;
+function getOrElse<T>(fn: () => T): (maybe: Maybe<T>) => T;
+function getOrElse<T>(fn: () => T, maybe?: Maybe<T>) {
+  const doit = (maybe: Maybe<T>) => maybe.getOrElse(fn);
+  return typeof maybe === 'undefined' ? doit : doit(maybe);
+}
+
 export {
   Maybe,
   Just,
@@ -57,5 +79,7 @@ export {
   fromNullable,
   fromEmpty,
   isJust,
-  isNothing
+  isNothing,
+  getOrElseValue,
+  getOrElse
 };

@@ -1559,13 +1559,13 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonous@^7.3.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/jsonous/-/jsonous-7.3.0.tgz#b6f1a1c3b35fac21859ccb527429871063dfe8da"
-  integrity sha512-ZE7vCB/U8CrFmQZi9RLWkzHYmupi9ypier5eVDj4vdvLIuW93stwydWZsyLYiY6k9NrqTOLfPcy73ofg9VQimg==
+jsonous@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/jsonous/-/jsonous-7.5.0.tgz#ed95314481e6d0ff0f9c4423a7958e72ed416a4b"
+  integrity sha512-By2bjXz3QPOOPqbhH9XvN6HTpjx4EcPIg0IZzCX5lw8SRyji+4PqxNPl1wLQsG9FHBF73hiumyxMoUuxHjjwKA==
   dependencies:
     date-fns "^2.16.1"
-    maybeasy "^3.0.0"
+    maybeasy "^4.0.0"
     resulty "^5.0.0"
     weakset "^1.0.0"
 
@@ -1750,10 +1750,10 @@ marked@^2.0.3:
   resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.3.tgz#3551c4958c4da36897bda2a16812ef1399c8d6b0"
   integrity sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==
 
-maybeasy@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-3.0.0.tgz#732c244da190c742de99aa682e6f86a66152bbcc"
-  integrity sha512-hMjmt0Kmfp2PdG9knKi6eUdp4513hkDib99EKqMK5tu1mn+t4Hih/pbJ4g5Kf3+f+c6GV6tBinZqtTtcnubm/g==
+maybeasy@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-4.0.0.tgz#4046640918d6c1aa3320c3d26686bca802348b12"
+  integrity sha512-mbm82AKFF5ZXV+6Td8a75POzfzMBFMH4HBaqKGSJ23gls2DzT/EJUA+20WH3F3LI17CNZUgVCfOHjfQAS1ZXAA==
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -2513,13 +2513,13 @@ tape@^4.6.3:
     string.prototype.trim "~1.2.1"
     through "~2.3.8"
 
-taskarian@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-5.1.0.tgz#e1b77a1b7afe0623d52115ca67fc0a8506f448bf"
-  integrity sha512-Z48BNHmZQw13/3tRlavTQAgMqvkUWvhvjburQwhQOolTtYYiVmh99jgwwuiqOowvKr4zYRSMMboWSP8Wt2+LKA==
+taskarian@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-5.2.0.tgz#d4f9cbf20b612d4c8a21e82fc802bb2266b77c97"
+  integrity sha512-+u7sjbYFD5D/SikscOf78WFbPkkg+z2BKrO+LS+sDkhLSnw8k/AoD0l5AIKShdeogiWFNtn/ivHeQ9n0sTzwGQ==
   dependencies:
     "@kofno/piper" "^4.3.0"
-    maybeasy "^3.0.0"
+    maybeasy "^4.0.0"
 
 through2@^2.0.0:
   version "2.0.5"

@@ -493,10 +493,10 @@ marked@^2.0.3:
   resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.3.tgz#3551c4958c4da36897bda2a16812ef1399c8d6b0"
   integrity sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==
 
-maybeasy@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-3.0.0.tgz#732c244da190c742de99aa682e6f86a66152bbcc"
-  integrity sha512-hMjmt0Kmfp2PdG9knKi6eUdp4513hkDib99EKqMK5tu1mn+t4Hih/pbJ4g5Kf3+f+c6GV6tBinZqtTtcnubm/g==
+maybeasy@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/maybeasy/-/maybeasy-4.0.0.tgz#4046640918d6c1aa3320c3d26686bca802348b12"
+  integrity sha512-mbm82AKFF5ZXV+6Td8a75POzfzMBFMH4HBaqKGSJ23gls2DzT/EJUA+20WH3F3LI17CNZUgVCfOHjfQAS1ZXAA==
 
 minimatch@^3.0.0, minimatch@^3.0.4:
   version "3.0.4"
