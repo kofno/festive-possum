@@ -14,8 +14,10 @@
     "tsc": "tsc",
     "yarn": "yarn"
   },
+  "dependencies": {
+    "maybeasy": "^5.0.0"
+  },
   "devDependencies": {
-    "maybeasy": "^5.0.0",
     "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
   },
