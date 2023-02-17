@@ -1,6 +1,6 @@
 {
   "name": "@kofno/stack-ts",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Typescript based immutable stack",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,7 +15,7 @@
     "yarn": "yarn"
   },
   "dependencies": {
-    "maybeasy": "^5.0.0"
+    "maybeasy": "^5.1.0"
   },
   "devDependencies": {
     "typedoc": "^0.20.36",
