@@ -7,7 +7,6 @@
   "repository": "https://github.com/kofno/stack-ts",
   "author": "Ryan L. Bell <ryan.l.bell@gmail.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
     "docs": "typedoc src/index.ts --out docs --theme minimal && touch docs/.nojekyll",
     "test": "tsc --noEmit",
