@@ -24,5 +24,9 @@
     "singleQuote": true,
     "trailingComma": "es5",
     "printWidth": 100
-  }
+  },
+  "packageManager": "yarn@3.4.1",
+  "workspaces": [
+    "packages/*"
+  ]
 }
