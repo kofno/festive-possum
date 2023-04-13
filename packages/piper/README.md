@@ -1,7 +1,5 @@
 # Piper
 
-[![Build Status](https://travis-ci.org/kofno/piper.svg?branch=master)](https://travis-ci.org/kofno/piper)
-
 Functional composition in Typescript. This library is named after @kofno's cat. She is glorious.
 
 # install
@@ -14,7 +12,10 @@ Functional composition in Typescript. This library is named after @kofno's cat. 
 
 ### `pipe`
 
-pipe takes in a sequence of functions which process an input parameter and return a output which will be used as the input for the next function in the sequence. _pipe_ is pretty much straight-up stolen from [RxJS](https://github.com/ReactiveX/rxjs/blob/f8a9d6e52f6ab151d08da0e7424f64f70763c830/src/internal/util/pipe.ts).
+pipe takes in a sequence of functions which process an input parameter and return a output which
+will be used as the input for the next function in the sequence. _pipe_ is copied almost
+line-for-line from
+[RxJS](https://github.com/ReactiveX/rxjs/blob/f8a9d6e52f6ab151d08da0e7424f64f70763c830/src/internal/util/pipe.ts).
 
 
 ```ts

@@ -1,6 +1,5 @@
 # ajaxian
 
-[![Build Status](https://travis-ci.org/kofno/ajaxian.svg?branch=master)](https://travis-ci.org/kofno/ajaxian)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
 Ajaxian is a small wrapper around the XMLHttpRequest object. It borrows heavily
@@ -44,8 +43,9 @@ an Ok object. If the data is incorrect, then an error message wrapped will be
 wrapped in an Err object. This will result in a BadPayload error.
 
 If you are building a json heavy application, I would recommend checking out
-[jsonous](https://github.com/kofno/jsonous). This library is specifically
-built for creating composable decoders for handling json content.
+[jsonous](https://github.com/kofno/festive-possum/tree/main/packages/jsonous). 
+This library is specifically built for creating composable decoders for handling
+json content.
 
 # installing
 
