@@ -357,7 +357,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@kofno/cute@workspace:packages/cute"
   dependencies:
-    maybeasy: ^5.0.0
+    maybeasy: ^5.1.0
     ts-node: ^9.1.1
     typedoc: ^0.20.36
     typescript: ^4.2.4
@@ -369,9 +369,9 @@ __metadata:
   resolution: "@kofno/gaia@workspace:packages/gaia"
   dependencies:
     "@types/node": ^17.0.23
-    maybeasy: ^5.0.0
-    resulty: ^5.0.0
-    taskarian: ^5.3.0
+    maybeasy: ^5.1.0
+    resulty: ^5.1.0
+    taskarian: ^5.4.0
     touch: ^3.1.0
     ts-node: ^9.1.1
     typedoc: ^0.20.36
@@ -379,7 +379,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kofno/piper@^4.3.0, @kofno/piper@workspace:packages/piper":
+"@kofno/piper@^4.4.0, @kofno/piper@workspace:packages/piper":
   version: 0.0.0-use.local
   resolution: "@kofno/piper@workspace:packages/piper"
   dependencies:
@@ -393,7 +393,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@kofno/stack-ts@workspace:packages/stack-ts"
   dependencies:
-    maybeasy: ^5.0.0
+    maybeasy: ^5.1.0
     typedoc: ^0.20.36
     typescript: ^4.2.4
   languageName: unknown
@@ -1698,10 +1698,10 @@ __metadata:
     karma-firefox-launcher: ^1.0.1
     karma-jasmine: ^2.0.0
     karma-typescript: ^3.0.8
-    resulty: ^5.0.0
+    resulty: "workspace:^"
     tap-spec: ^4.1.1
     tape: ^4.6.3
-    taskarian: ^5.3.0
+    taskarian: "workspace:^"
     ts-node: ^9.1.1
     typedoc: ^0.20.36
     typescript: ^4.2.4
@@ -1714,19 +1714,19 @@ __metadata:
   dependencies:
     "@types/jasmine": ^2.5.47
     "@types/tape": ^4.2.29
-    axios: ^0.26.1
+    axios: ^1.6.2
     jasmine: ^2.6.0
-    jsonous: ^7.6.0
+    jsonous: ^7.7.0
     karma: ^4.4
     karma-chrome-launcher: ^3.0
     karma-firefox-launcher: ^1.0
     karma-jasmine: ^3.1
     karma-typescript: ^5.0
-    maybeasy: ^5.0.0
-    resulty: ^5.0.0
+    maybeasy: ^5.1.0
+    resulty: ^5.1.0
     tap-spec: ^4.1.1
     tape: ^4.6.3
-    taskarian: ^5.3.0
+    taskarian: ^5.4.0
     ts-node: ^9.1.1
     typedoc: ^0.20.36
     typescript: ^4.2.4
@@ -2127,12 +2127,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.26.1":
-  version: 0.26.1
-  resolution: "axios@npm:0.26.1"
+"axios@npm:^1.6.2":
+  version: 1.6.2
+  resolution: "axios@npm:1.6.2"
   dependencies:
-    follow-redirects: ^1.14.8
-  checksum: d9eb58ff4bc0b36a04783fc9ff760e9245c829a5a1052ee7ca6013410d427036b1d10d04e7380c02f3508c5eaf3485b1ae67bd2adbfec3683704745c8d7a6e1a
+    follow-redirects: ^1.15.0
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 4a7429e2b784be0f2902ca2680964391eae7236faa3967715f30ea45464b98ae3f1c6f631303b13dfe721b17126b01f486c7644b9ef276bfc63112db9fd379f8
   languageName: node
   linkType: hard
 
@@ -2864,7 +2866,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"combined-stream@npm:^1.0.6, combined-stream@npm:~1.0.6":
+"combined-stream@npm:^1.0.6, combined-stream@npm:^1.0.8, combined-stream@npm:~1.0.6":
   version: 1.0.8
   resolution: "combined-stream@npm:1.0.8"
   dependencies:
@@ -4273,13 +4275,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.8":
+"follow-redirects@npm:^1.0.0":
   version: 1.15.2
   resolution: "follow-redirects@npm:1.15.2"
   peerDependenciesMeta:
     debug:
       optional: true
   checksum: faa66059b66358ba65c234c2f2a37fcec029dc22775f35d9ad6abac56003268baf41e55f9ee645957b32c7d9f62baf1f0b906e68267276f54ec4b4c597c2b190
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.0":
+  version: 1.15.3
+  resolution: "follow-redirects@npm:1.15.3"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 584da22ec5420c837bd096559ebfb8fe69d82512d5585004e36a3b4a6ef6d5905780e0c74508c7b72f907d1fa2b7bd339e613859e9c304d0dc96af2027fd0231
   languageName: node
   linkType: hard
 
@@ -4296,6 +4308,17 @@ __metadata:
   version: 0.6.1
   resolution: "forever-agent@npm:0.6.1"
   checksum: 766ae6e220f5fe23676bb4c6a99387cec5b7b62ceb99e10923376e27bfea72f3c3aeec2ba5f45f3f7ba65d6616965aa7c20b15002b6860833bb6e394dea546a8
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.8
+    mime-types: ^2.1.12
+  checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
   languageName: node
   linkType: hard
 
@@ -6009,14 +6032,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonous@^7.6.0, jsonous@workspace:packages/jsonous":
+"jsonous@^7.7.0, jsonous@workspace:packages/jsonous":
   version: 0.0.0-use.local
   resolution: "jsonous@workspace:packages/jsonous"
   dependencies:
     "@types/tape": ^4.13.0
     date-fns: ^2.16.1
-    maybeasy: ^5.0.0
-    resulty: ^5.0.0
+    maybeasy: ^5.1.0
+    resulty: ^5.1.0
     tap-spec: ^5.0.0
     tape: ^5.0.1
     ts-node: ^9.1.1
@@ -6618,7 +6641,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"maybeasy@^5.0.0, maybeasy@workspace:packages/maybeasy":
+"maybeasy@^5.1.0, maybeasy@workspace:packages/maybeasy":
   version: 0.0.0-use.local
   resolution: "maybeasy@workspace:packages/maybeasy"
   dependencies:
@@ -7178,8 +7201,8 @@ __metadata:
   resolution: "nonempty-list@workspace:packages/nonempty-list"
   dependencies:
     "@types/tape": ^4.2.32
-    maybeasy: ^5.0.0
-    resulty: ^5.0.0
+    maybeasy: ^5.1.0
+    resulty: ^5.1.0
     tap-spec: ^5.0.0
     tape: ^4.9.1
     ts-node: ^10.1.0
@@ -8220,6 +8243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
+  languageName: node
+  linkType: hard
+
 "pseudomap@npm:^1.0.2":
   version: 1.0.2
   resolution: "pseudomap@npm:1.0.2"
@@ -8857,7 +8887,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resulty@^5.0.0, resulty@workspace:packages/resulty":
+"resulty@^5.1.0, resulty@workspace:^, resulty@workspace:packages/resulty":
   version: 0.0.0-use.local
   resolution: "resulty@workspace:packages/resulty"
   dependencies:
@@ -10037,13 +10067,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"taskarian@^5.3.0, taskarian@workspace:packages/taskarian":
+"taskarian@^5.4.0, taskarian@workspace:^, taskarian@workspace:packages/taskarian":
   version: 0.0.0-use.local
   resolution: "taskarian@workspace:packages/taskarian"
   dependencies:
-    "@kofno/piper": ^4.3.0
+    "@kofno/piper": ^4.4.0
     "@types/tape": ^4.2.29
-    maybeasy: ^5.0.0
+    maybeasy: ^5.1.0
     tap-spec: ^4.1.1
     tape: ^4.6.3
     ts-node: ^9.1.1

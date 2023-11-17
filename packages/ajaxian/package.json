@@ -29,8 +29,8 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "resulty": "^5.1.0",
-    "taskarian": "^5.4.0"
+    "resulty": "workspace:^",
+    "taskarian": "workspace:^"
   },
   "repository": {
     "type": "git",

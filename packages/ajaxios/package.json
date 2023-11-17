@@ -1,6 +1,6 @@
 {
   "name": "ajaxios",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "description": "Http requests with better error handling",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,7 +14,7 @@
     "yarn": "yarn"
   },
   "dependencies": {
-    "axios": "^0.26.1",
+    "axios": "^1.6.2",
     "jsonous": "^7.7.0",
     "maybeasy": "^5.1.0",
     "resulty": "^5.1.0",
