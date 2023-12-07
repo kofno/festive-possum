@@ -30,7 +30,7 @@ test('Task.map', (t) => {
       (result) => t.pass(`Task succeeded with ${result}`)
     );
 
-  Task.fail('Opps!')
+  Task.fail('Oops!')
     .map((_) => t.fail('map should never run'))
     .fork(
       (err) => t.pass(`Task errored with ${err}`),
