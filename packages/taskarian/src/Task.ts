@@ -1,5 +1,5 @@
 import { always, noop } from '@kofno/piper';
-import { fromEmpty } from "maybeasy";
+import { fromEmpty } from 'maybeasy';
 
 export type Reject<E> = (err: E) => void;
 export type Resolve<T> = (t: T) => void;
@@ -28,7 +28,8 @@ class Task<E, T> {
   }
 
   /**
-   * Converts a function that returns a Promise into a Task.
+   * Converts a function that returns a Promise into a Task. Promise based tasks
+   * can't be cancelled.
    */
   public static fromPromise<E, T>(fn: () => Promise<T>): Task<E, T> {
     return new Task((reject, resolve) => {
@@ -55,17 +56,21 @@ class Task<E, T> {
     return new Task((reject, resolve) => {
       let resolved = 0;
       const results: T[] = [];
+      const cancels: Record<number, Cancel> = {};
       const resolveIdx = (idx: number) => (result: T) => {
         resolved = resolved + 1;
         results[idx] = result;
+        cancels[idx] = noop;
         if (resolved === length) {
           resolve(results);
         }
       };
       for (let i = 0; i < length; i++) {
-        ts[i].fork(reject, resolveIdx(i));
+        cancels[i] = ts[i].fork(reject, resolveIdx(i));
       }
-      return noop;
+      return () => {
+        Object.entries(cancels).forEach(([_, cancel]) => cancel());
+      };
     });
   }
 
@@ -152,7 +157,7 @@ class Task<E, T> {
           return () => cancelAll();
         }),
     });
-  };
+  }
 
   /**
    * `loop` returns a higher-order task forks the "inner" task until the inner task
@@ -165,8 +170,9 @@ class Task<E, T> {
   public static loop<E, T>(interval: number, task: Task<E, T>): Task<never, T> {
     return new Task<never, T>((_, resolve) => {
       let timeout: any;
+      let internalCancel: Cancel | undefined;
       const loop = () => {
-        task.fork(
+        internalCancel = task.fork(
           () => {
             timeout = setTimeout(loop, interval);
           },
@@ -178,6 +184,7 @@ class Task<E, T> {
 
       return () => {
         clearTimeout(timeout);
+        internalCancel && internalCancel();
       };
     });
   }
@@ -190,7 +197,8 @@ class Task<E, T> {
         return result.value;
       }
       returnValue = new Task<E, T>((reject, resolve) => {
-        result.value
+        let cancel: Cancel | undefined;
+        cancel = result.value
           .do((v: any) => {
             result = gen.next(v);
           })
@@ -198,7 +206,9 @@ class Task<E, T> {
             (err: E) => reject(err),
             (v: T) => resolve(v)
           );
-        return noop;
+        return () => {
+          cancel && cancel();
+        };
       });
     }
   }
@@ -260,10 +270,22 @@ class Task<E, T> {
    */
   public andThen<A>(f: (t: T) => Task<E, A>): Task<E, A> {
     return new Task((reject, resolve) => {
-      return this.fn(
+      let innerCancel: Cancel | undefined;
+
+      const outerCancel = this.fn(
         (err) => reject(err),
-        (a: T) => f(a).fork(reject, resolve)
+        (a: T) => {
+          innerCancel = f(a).fork(reject, resolve);
+        }
       );
+
+      return () => {
+        if (innerCancel) {
+          innerCancel();
+        } else {
+          outerCancel();
+        }
+      };
     });
   }
 
@@ -299,10 +321,20 @@ class Task<E, T> {
    */
   public orElse<X>(f: (err: E) => Task<X, T>): Task<X, T> {
     return new Task((reject, resolve) => {
-      return this.fn(
-        (x: E) => f(x).fork(reject, resolve),
+      let innerCancel: Cancel | undefined;
+      const outerCancel = this.fn(
+        (x: E) => {
+          innerCancel = f(x).fork(reject, resolve);
+        },
         (t) => resolve(t)
       );
+      return () => {
+        if (innerCancel) {
+          innerCancel();
+        } else {
+          outerCancel();
+        }
+      };
     });
   }
 
