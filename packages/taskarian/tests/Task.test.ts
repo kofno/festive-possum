@@ -1,4 +1,4 @@
-import * as test from 'tape';
+import test from 'tape';
 import Task, { Resolve } from './../src/index';
 
 const cancellable = new Task((reject, resolve: Resolve<string>) => {
