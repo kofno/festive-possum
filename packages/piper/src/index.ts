@@ -95,8 +95,8 @@ export function pipeline<A, B>(fn: UnaryFunction<A, B>): Pipeline<A, B> {
   return new Pipeline(fn);
 }
 
-export function pick<Type>(key: keyof Type, obj: Type): Type[typeof key];
-export function pick<Type>(key: keyof Type): (obj: Type) => Type[typeof key];
+export function pick<Type, K extends keyof Type>(key: K, obj: Type): Type[K];
+export function pick<Type, K extends keyof Type>(key: K): (obj: Type) => Type[K];
 export function pick<T>(key: keyof T, obj?: T) {
   const doit = (obj: T) => obj[key];
 

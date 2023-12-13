@@ -1,6 +1,6 @@
 {
   "name": "@kofno/gaia",
-  "version": "2.8.0",
+  "version": "2.8.1",
   "description": "Safely read values from your environment",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,9 +17,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.10 14",
-    "maybeasy": "workspace:*",
-    "resulty": "^workspace:*",
-    "taskarian": "workspace:*",
+    "maybeasy": "5.1.0",
+    "resulty": "5.1.0",
+    "taskarian": "5.5.2",
     "touch": "^3.1.0",
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.36",
