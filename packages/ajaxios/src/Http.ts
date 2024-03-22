@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse, CancelToken } from 'axios';
 import Decoder from 'jsonous';
 import { err, ok, Result } from 'resulty';
-import Task, { Reject, Resolve } from 'taskarian';
+import { Reject, Resolve, Task } from 'taskarian';
 import AjaxResponse from './AjaxResponse';
 import { convertHeaderObject, Header } from './Headers';
 import { badPayload, badStatus, HttpError, networkError, timeout } from './HttpError';
@@ -10,7 +10,7 @@ import { Request } from './Request';
 
 function handleResponse<A>(
   axioResponse: AxiosResponse<unknown>,
-  decoder: Decoder<A>,
+  decoder: Decoder<A>
 ): Result<HttpError, HttpSuccess<A>> {
   const response: AjaxResponse = {
     body: axioResponse.data,
@@ -20,8 +20,8 @@ function handleResponse<A>(
   };
   const result = decoder.decodeAny(axioResponse.data);
   return result.cata({
-    Err: error => err(badPayload(error, response)),
-    Ok: r => ok(httpSuccess(response, r)),
+    Err: (error) => err(badPayload(error, response)),
+    Ok: (r) => ok(httpSuccess(response, r)),
   });
 }
 
@@ -74,9 +74,9 @@ export function toHttpResponseTask<A>(request: Request<A>): Task<HttpError, Http
     const source = CancelToken.source();
     const axiosReq = configureRequest(request, source.token);
     axios(axiosReq)
-      .then(resp => handleResponse(resp, request.decoder))
-      .then(result => result.cata({ Ok: resolve, Err: reject }))
-      .catch(err => reject(handleRequestError(err)));
+      .then((resp) => handleResponse(resp, request.decoder))
+      .then((result) => result.cata({ Ok: resolve, Err: reject }))
+      .catch((err) => reject(handleRequestError(err)));
     return () => source.cancel('Request cancelled');
   });
 }
@@ -89,7 +89,7 @@ export function toHttpResponseTask<A>(request: Request<A>): Task<HttpError, Http
  * A failed request will result in an HttpError object.
  */
 export function toHttpTask<A>(request: Request<A>): Task<HttpError, A> {
-  return toHttpResponseTask(request).map(r => r.result);
+  return toHttpResponseTask(request).map((r) => r.result);
 }
 
 /**
