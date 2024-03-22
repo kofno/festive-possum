@@ -1,6 +1,6 @@
 import { isValid, parseISO, parseJSON } from 'date-fns';
 import { just, Maybe, nothing } from 'maybeasy';
-import { err, Err, ok, Result } from 'resulty';
+import { err, ok, Result } from 'resulty';
 import { stringify } from './ErrorStringify';
 
 /**
@@ -264,7 +264,7 @@ export const array = <A>(decoder: Decoder<A>): Decoder<A[]> =>
         .decodeAny(value[idx])
         .andThen((v) => result.map((vs) => vs.concat([v])))
         .mapError((e) => `${e}:\nerror found in an array at [${idx}]`);
-      if (result instanceof Err) {
+      if (failed(result)) {
         break;
       }
     }
@@ -415,3 +415,10 @@ export const dict = <A>(decoder: Decoder<A>): Decoder<Map<string, A>> =>
       return memo;
     }, new Map<string, A>())
   );
+
+function failed<E, T>(r: Result<E, T>): boolean {
+  return r.cata({
+    Err: (_) => true,
+    Ok: (_) => false,
+  });
+}

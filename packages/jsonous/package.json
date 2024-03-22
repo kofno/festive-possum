@@ -1,6 +1,6 @@
 {
   "name": "jsonous",
-  "version": "7.7.0",
+  "version": "8.0.0",
   "description": "Type safe JSON decoding for JavaScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,14 +21,14 @@
     "@types/tape": "^4.13.0",
     "tap-spec": "^5.0.0",
     "tape": "^5.0.1",
-    "ts-node": "^9.1.1",
+    "ts-node": "^10.9.2",
     "typedoc": "^0.20.36",
-    "typescript": "^4.2.4"
+    "typescript": "^5.4.3"
   },
   "dependencies": {
-    "date-fns": "^2.16.1",
-    "maybeasy": "^5.1.0",
-    "resulty": "^5.1.0",
+    "date-fns": "^3.6.0",
+    "maybeasy": "^6.2.0",
+    "resulty": "^6.1.0",
     "weakset": "^1.0.0"
   },
   "prettier": {
