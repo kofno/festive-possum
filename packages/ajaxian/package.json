@@ -1,6 +1,6 @@
 {
   "name": "ajaxian",
-  "version": "4.8.2",
+  "version": "4.9.0",
   "description": "Ajax requests with better error handling",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/jasmine": "^2.5.47",
+    "@types/node": "^20.11.30",
     "@types/tape": "^4.2.29",
     "jasmine": "^3.0.0",
     "karma": "^4.0.0",
@@ -26,11 +27,11 @@
     "tape": "^4.6.3",
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.36",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "dependencies": {
-    "resulty": "^5.1.0",
-    "taskarian": "^5.5.2"
+    "resulty": "^6.1.0",
+    "taskarian": "^6.0.0"
   },
   "repository": {
     "type": "git",

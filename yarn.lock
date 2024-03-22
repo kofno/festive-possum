@@ -313,7 +313,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.5.tgz#ec10755e871497bcd83efe927e43ec46e8c0747e"
   integrity sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==
 
-"@types/node@*", "@types/node@^20.10 14", "@types/node@^20.10.4":
+"@types/node@*", "@types/node@^20.10 14", "@types/node@^20.10.4", "@types/node@^20.11.30":
   version "20.11.30"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.30.tgz#9c33467fc23167a347e73834f788f4b9f399d66f"
   integrity sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==
@@ -4510,6 +4510,11 @@ tape@^5.0.1:
     object.assign "^4.1.5"
     resolve "^2.0.0-next.5"
     string.prototype.trim "^1.2.8"
+
+taskarian@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/taskarian/-/taskarian-6.0.0.tgz#aba684303683f4fcd636a78a4af89a2bde7fb1f8"
+  integrity sha512-ZHhbOIzUqkkXt42Pg+nsLIxQu39gyUfGtDdFBJA4mKEITuJJqmPSeQHiF2rk2/gZ/dFBf0aWJzQU2ZiomSE/Rg==
 
 temp@0.8.3:
   version "0.8.3"

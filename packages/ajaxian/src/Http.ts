@@ -1,5 +1,5 @@
 import { err, ok, Result } from 'resulty';
-import Task, { Reject, Resolve } from 'taskarian';
+import { Reject, Resolve, Task } from 'taskarian/script/src/Task';
 import AjaxResponse from './AjaxResponse';
 import { Header, parseHeaders } from './Headers';
 import { badPayload, badStatus, badUrl, HttpError, networkError, timeout } from './HttpError';
@@ -17,7 +17,7 @@ function send(xhr: XMLHttpRequest, data: any) {
 
 const handleResponse = <A>(
   xhr: XMLHttpRequest,
-  decoder: DecoderFn<A>,
+  decoder: DecoderFn<A>
 ): Result<HttpError, HttpSuccess<A>> => {
   const response: AjaxResponse = {
     body: xhr.response,
@@ -32,8 +32,8 @@ const handleResponse = <A>(
   } else {
     const result = decoder(response.body);
     return result.cata({
-      Err: error => err(badPayload(error, response)),
-      Ok: r => ok(httpSuccess(response, r)),
+      Err: (error) => err(badPayload(error, response)),
+      Ok: (r) => ok(httpSuccess(response, r)),
     });
   }
 };
@@ -63,8 +63,8 @@ export function toHttpResponseTask<A>(request: Request<A>): Task<HttpError, Http
     xhr.addEventListener('timeout', () => reject(timeout()));
     xhr.addEventListener('load', () => {
       return handleResponse(xhr, request.decoder).cata({
-        Err: e => reject(e),
-        Ok: d => resolve(d),
+        Err: (e) => reject(e),
+        Ok: (d) => resolve(d),
       });
     });
 
@@ -89,7 +89,7 @@ export function toHttpResponseTask<A>(request: Request<A>): Task<HttpError, Http
  * A failed request will result in an HttpError object.
  */
 export const toHttpTask = <A>(request: Request<A>): Task<HttpError, A> =>
-  toHttpResponseTask(request).map(r => r.result);
+  toHttpResponseTask(request).map((r) => r.result);
 
 /**
  * Convenience function that will help make switch statements exhaustive
