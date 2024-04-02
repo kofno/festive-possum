@@ -1,5 +1,5 @@
 import { err, ok, Result } from 'resulty';
-import { Reject, Resolve, Task } from 'taskarian/script/src/Task';
+import { Reject, Resolve, Task } from 'taskarian';
 import AjaxResponse from './AjaxResponse';
 import { Header, parseHeaders } from './Headers';
 import { badPayload, badStatus, badUrl, HttpError, networkError, timeout } from './HttpError';
